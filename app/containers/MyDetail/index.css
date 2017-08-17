@@ -1,0 +1,48 @@
+.back {
+  height: 100%;
+  line-height: 100%;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.userDetail {
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+}
+.userDetail .userDetail-List {
+  width: 100%;
+  height: 100%;
+}
+.userDetail .userDetail-List li {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  line-height: 60px;
+  height: 60px;
+  border-bottom: 1px solid #cccccc;
+}
+.userDetail .userDetail-List li:nth-child(1) {
+  height: 100px;
+  line-height: 100px;
+}
+.userDetail .userDetail-List li:nth-child(1) span img {
+  vertical-align: middle;
+  margin-left: 150px;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #0086b3;
+}
+.userDetail .userDetail-List li:nth-child(2) span {
+  margin-left: 190px;
+  display: inline-block;
+}
+.userDetail .userDetail-List li:nth-child(3) span {
+  margin-left: 180px;
+  display: inline-block;
+}
+.userDetail .userDetail-List li:nth-child(4) span {
+  margin-left: 220px;
+  display: inline-block;
+}

@@ -7,9 +7,6 @@ export default class Signup extends Component{
         super();
         this.state={title:"注册"};
     }
-    handleChange =()=>{
-
-    };
     handleClick = ()=>{
         let username = this.refs.username.value;
         let password1 = this.refs.password1.value;
@@ -22,6 +19,7 @@ export default class Signup extends Component{
         }else {
             let formData = document.forms.namedItem("fileInfo");
             let oData = new FormData(formData);
+            console.log(oData);
             $.ajax({
                 url:'http://47.93.47.208:3333/user/signUp',
                 type:'post',
@@ -45,7 +43,9 @@ export default class Signup extends Component{
         return (
             <div className="row body" >
                 <div className="col-xs-12">
-                    <Header title={this.state.title}/>
+                     <nav className="navbar navbar-default navbar-fixed-top">
+                        <p style={{fontSize:22,color:'black',fontWeight:'bold'}} className="text-center navbar-text"><span className="pull-left back" onClick={()=>history.back()} >&lt;</span>{this.state.title}</p>
+                     </nav>
                 </div>
                 <div className="">
                     <form encType="multipart/form-data" method="post" className="form-horizontal" name="fileInfo">

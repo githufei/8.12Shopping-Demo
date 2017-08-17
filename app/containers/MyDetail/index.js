@@ -6,7 +6,6 @@ import './index.less'
 export default class MyDetail extends Component{
     constructor(){
         super();
-
     }
     render(){
         return(
@@ -18,14 +17,11 @@ export default class MyDetail extends Component{
                     <ul className="userDetail-List">
                         <li>用户头像
                          <span>
-                             <img src="" alt=""/>
+                              <img src={"http://47.93.47.208:3333/userImg/"+JSON.parse(localStorage.getItem('myInfo')).avatar} alt=""/> 
                          </span>
                         </li>
-                        <li>会员名 <span>山炮进城</span></li>
-                        <li>淘宝昵称
-                        <span>快来取个有逼格的名字吧</span><span>&gt;</span>
-                        </li>
-                        <li>我的二维码<span><img src="" alt=""/></span></li>
+                        <li>会员名 <span>{JSON.parse(localStorage.getItem('myInfo')).username}</span></li>
+                        <li>我的邮箱<span>{JSON.parse(localStorage.getItem('myInfo')).email}</span></li>
                         <li>性别
                             <span>男</span>
                         </li>

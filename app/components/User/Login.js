@@ -39,7 +39,9 @@ export default class Login extends Component{
         return (
             <div className="row body" >
                 <div className="col-xs-12">
-                    <Header title={this.state.title}/>
+                   <nav className="navbar navbar-default navbar-fixed-top">
+                        <p style={{fontSize:22,color:'black',fontWeight:'bold'}} className="text-center navbar-text"><span className="pull-left back" onClick={()=>history.back()} >&lt;</span>{this.state.title}</p>
+                    </nav>
                 </div>
                 <div className="">
                         <form  method="post" className="form-horizontal" id="formData" name="fileInfo">
